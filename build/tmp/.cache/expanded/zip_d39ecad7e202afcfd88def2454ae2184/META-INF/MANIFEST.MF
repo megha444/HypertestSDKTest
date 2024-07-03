@@ -1,0 +1,37 @@
+Manifest-Version: 1.0
+Created-By: Maven JAR Plugin 3.3.0
+Build-Jdk-Spec: 17
+Specification-Title: Apache Log4j to SLF4J Adapter
+Specification-Version: 2.23
+Specification-Vendor: The Apache Software Foundation
+Implementation-Title: Apache Log4j to SLF4J Adapter
+Implementation-Version: 2.23.1
+Implementation-Vendor: The Apache Software Foundation
+Bundle-ActivationPolicy: lazy
+Bundle-Activator: org.apache.logging.slf4j.Activator
+Bundle-Description: The Apache Log4j binding between Log4j 2 API and SLF
+ 4J.
+Bundle-License: "Apache-2.0";link="https://www.apache.org/licenses/LICEN
+ SE-2.0.txt"
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache Log4j to SLF4J Adapter
+Bundle-SymbolicName: org.apache.logging.log4j.to.slf4j
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 2.23.1
+Export-Package: org.apache.logging.slf4j;version="2.20.1";uses:="org.apa
+ che.logging.log4j,org.apache.logging.log4j.message,org.apache.logging.l
+ og4j.spi,org.apache.logging.log4j.util,org.slf4j"
+Import-Package: org.slf4j;version="[1.7,3)",org.slf4j.spi;version="[1.7,
+ 3)",org.apache.logging.log4j;version="[2.20,3)",org.apache.logging.log4
+ j.message;version="[2.22,3)",org.apache.logging.log4j.spi;version="[2.2
+ 0,3)",org.apache.logging.log4j.status;version="[2.23,3)",org.apache.log
+ ging.log4j.util;version="[2.22,3)"
+Multi-Release: false
+Provide-Capability: osgi.service;objectClass:List<String>="org.apache.lo
+ gging.log4j.spi.Provider";effective:=active,osgi.serviceloader;osgi.ser
+ viceloader="org.apache.logging.log4j.spi.Provider";register:="org.apach
+ e.logging.slf4j.SLF4JProvider"
+Require-Capability: osgi.extender;filter:="(&(osgi.extender=osgi.service
+ loader.registrar)(version>=1.0.0)(!(version>=2.0.0)))";resolution:=opti
+ onal,osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+

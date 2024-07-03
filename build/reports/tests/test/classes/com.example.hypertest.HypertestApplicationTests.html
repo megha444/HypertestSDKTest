@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.330s</div>
+<div class="counter">0.309s</div>
 <p>duration</p>
 </div>
 </td>
@@ -66,9 +66,6 @@
 <li>
 <a href="#tab1">Standard output</a>
 </li>
-<li>
-<a href="#tab2">Standard error</a>
-</li>
 </ul>
 <div id="tab0" class="tab">
 <h2>Tests</h2>
@@ -82,7 +79,7 @@
 </thead>
 <tr>
 <td class="success">contextLoads()</td>
-<td class="success">0.330s</td>
+<td class="success">0.309s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -90,8 +87,8 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>11:50:40.480 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.hypertest.HypertestApplicationTests]: HypertestApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-11:50:40.536 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.hypertest.HypertestApplication for test class com.example.hypertest.HypertestApplicationTests
+<pre>17:04:40.921 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.hypertest.HypertestApplicationTests]: HypertestApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+17:04:40.978 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.hypertest.HypertestApplication for test class com.example.hypertest.HypertestApplicationTests
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -102,37 +99,21 @@
 
  :: Spring Boot ::                (v3.3.1)
 
-2024-06-30T11:50:40.764+05:30  INFO 87328 --- [hypertest] [    Test worker] c.e.hypertest.HypertestApplicationTests  : Starting HypertestApplicationTests using Java 22.0.1 with PID 87328 (started by meghaagarwal in /Users/meghaagarwal/Desktop/Codes/hypertest)
-2024-06-30T11:50:40.765+05:30  INFO 87328 --- [hypertest] [    Test worker] c.e.hypertest.HypertestApplicationTests  : No active profile set, falling back to 1 default profile: &quot;default&quot;
-2024-06-30T11:50:41.238+05:30  INFO 87328 --- [hypertest] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-06-30T11:50:41.264+05:30  INFO 87328 --- [hypertest] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 1 JPA repository interface.
-2024-06-30T11:50:41.704+05:30  INFO 87328 --- [hypertest] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-06-30T11:50:41.835+05:30  INFO 87328 --- [hypertest] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@171aa66
-2024-06-30T11:50:41.836+05:30  INFO 87328 --- [hypertest] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-06-30T11:50:41.853+05:30  INFO 87328 --- [hypertest] [    Test worker] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5432/postgres (PostgreSQL 16.3)
-2024-06-30T11:50:41.867+05:30  INFO 87328 --- [hypertest] [    Test worker] o.f.core.internal.database.base.Schema   : Creating schema &quot;posts&quot; ...
-2024-06-30T11:50:41.874+05:30  INFO 87328 --- [hypertest] [    Test worker] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table &quot;posts&quot;.&quot;flyway_schema_history&quot; ...
-2024-06-30T11:50:41.959+05:30  INFO 87328 --- [hypertest] [    Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema &quot;posts&quot;: null
-2024-06-30T11:50:41.961+05:30  INFO 87328 --- [hypertest] [    Test worker] o.f.core.internal.command.DbMigrate      : Schema &quot;posts&quot; is up to date. No migration necessary.
-2024-06-30T11:50:42.024+05:30  INFO 87328 --- [hypertest] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-06-30T11:50:42.052+05:30  INFO 87328 --- [hypertest] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
-2024-06-30T11:50:42.067+05:30  INFO 87328 --- [hypertest] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-06-30T11:50:42.219+05:30  INFO 87328 --- [hypertest] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-06-30T11:50:42.689+05:30  INFO 87328 --- [hypertest] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-06-30T11:50:42.691+05:30  INFO 87328 --- [hypertest] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-06-30T11:50:42.985+05:30  WARN 87328 --- [hypertest] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-06-30T11:50:43.446+05:30  INFO 87328 --- [hypertest] [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
-2024-06-30T11:50:43.497+05:30  INFO 87328 --- [hypertest] [    Test worker] c.e.hypertest.HypertestApplicationTests  : Started HypertestApplicationTests in 2.889 seconds (process running for 3.498)
-</pre>
-</span>
-</div>
-<div id="tab2" class="tab">
-<h2>Standard error</h2>
-<span class="code">
-<pre>WARNING: A Java agent has been loaded dynamically (/Users/meghaagarwal/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.14.17/e3c251a39dc90badaf71c83427ba46840f219d8d/byte-buddy-agent-1.14.17.jar)
-WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
-WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
-WARNING: Dynamic loading of agents will be disallowed by default in a future release
+2024-07-03T17:04:41.183+05:30  INFO 48537 --- [hypertest] [    Test worker] c.e.hypertest.HypertestApplicationTests  : Starting HypertestApplicationTests using Java 17.0.10 with PID 48537 (started by meghaagarwal in /Users/meghaagarwal/Desktop/Desktop - Megha’s New Air/Codes/hypertest)
+2024-07-03T17:04:41.184+05:30  INFO 48537 --- [hypertest] [    Test worker] c.e.hypertest.HypertestApplicationTests  : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2024-07-03T17:04:41.498+05:30  INFO 48537 --- [hypertest] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-03T17:04:41.528+05:30  INFO 48537 --- [hypertest] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 1 JPA repository interface.
+2024-07-03T17:04:41.726+05:30  INFO 48537 --- [hypertest] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-03T17:04:41.827+05:30  INFO 48537 --- [hypertest] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@48581a3b
+2024-07-03T17:04:41.828+05:30  INFO 48537 --- [hypertest] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-03T17:04:41.851+05:30  INFO 48537 --- [hypertest] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-03T17:04:41.875+05:30  INFO 48537 --- [hypertest] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-03T17:04:41.891+05:30  INFO 48537 --- [hypertest] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-03T17:04:42.038+05:30  INFO 48537 --- [hypertest] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-03T17:04:42.492+05:30  INFO 48537 --- [hypertest] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-03T17:04:42.494+05:30  INFO 48537 --- [hypertest] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-03T17:04:42.679+05:30  WARN 48537 --- [hypertest] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-03T17:04:42.870+05:30  INFO 48537 --- [hypertest] [    Test worker] c.e.hypertest.HypertestApplicationTests  : Started HypertestApplicationTests in 1.815 seconds (process running for 2.466)
 </pre>
 </span>
 </div>
@@ -144,7 +125,7 @@ WARNING: Dynamic loading of agents will be disallowed by default in a future rel
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.8</a> at 30 Jun 2024, 11:50:43 am</p>
+<a href="http://www.gradle.org">Gradle 8.8</a> at 03-Jul-2024, 5:04:43 pm</p>
 </div>
 </div>
 </body>

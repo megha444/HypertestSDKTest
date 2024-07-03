@@ -1,2 +1,6 @@
 Manifest-Version: 1.0
+Premain-Class: com.example.hypertest.agent.RecordingAgent
+Agent-Class: com.example.hypertest.agent.RecordingAgent
+Can-Redefine-Classes: true
+Can-Retransform-Classes: true
 
