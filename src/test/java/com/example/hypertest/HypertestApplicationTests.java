@@ -8,6 +8,5 @@ class HypertestApplicationTests {
 
     @Test
     void contextLoads() {
-        // This test checks if the application context loads successfully.
     }
 }

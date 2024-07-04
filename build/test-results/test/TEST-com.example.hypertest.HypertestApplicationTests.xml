@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.hypertest.HypertestApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-07-03T11:34:42" hostname="Meghas-New-Air.local" time="0.309">
+<testsuite name="com.example.hypertest.HypertestApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-07-04T05:04:46" hostname="Meghas-New-Air.local" time="0.295">
   <properties/>
-  <testcase name="contextLoads()" classname="com.example.hypertest.HypertestApplicationTests" time="0.309"/>
-  <system-out><![CDATA[17:04:40.921 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.hypertest.HypertestApplicationTests]: HypertestApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-17:04:40.978 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.hypertest.HypertestApplication for test class com.example.hypertest.HypertestApplicationTests
+  <testcase name="contextLoads()" classname="com.example.hypertest.HypertestApplicationTests" time="0.295"/>
+  <system-out><![CDATA[10:34:44.655 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.hypertest.HypertestApplicationTests]: HypertestApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+10:34:44.709 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.hypertest.HypertestApplication for test class com.example.hypertest.HypertestApplicationTests
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -14,21 +14,22 @@
 
  :: Spring Boot ::                (v3.3.1)
 
-2024-07-03T17:04:41.183+05:30  INFO 48537 --- [hypertest] [    Test worker] c.e.hypertest.HypertestApplicationTests  : Starting HypertestApplicationTests using Java 17.0.10 with PID 48537 (started by meghaagarwal in /Users/meghaagarwal/Desktop/Desktop - Megha’s New Air/Codes/hypertest)
-2024-07-03T17:04:41.184+05:30  INFO 48537 --- [hypertest] [    Test worker] c.e.hypertest.HypertestApplicationTests  : No active profile set, falling back to 1 default profile: "default"
-2024-07-03T17:04:41.498+05:30  INFO 48537 --- [hypertest] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-07-03T17:04:41.528+05:30  INFO 48537 --- [hypertest] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 1 JPA repository interface.
-2024-07-03T17:04:41.726+05:30  INFO 48537 --- [hypertest] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-07-03T17:04:41.827+05:30  INFO 48537 --- [hypertest] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@48581a3b
-2024-07-03T17:04:41.828+05:30  INFO 48537 --- [hypertest] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-07-03T17:04:41.851+05:30  INFO 48537 --- [hypertest] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-07-03T17:04:41.875+05:30  INFO 48537 --- [hypertest] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
-2024-07-03T17:04:41.891+05:30  INFO 48537 --- [hypertest] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-07-03T17:04:42.038+05:30  INFO 48537 --- [hypertest] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-07-03T17:04:42.492+05:30  INFO 48537 --- [hypertest] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-07-03T17:04:42.494+05:30  INFO 48537 --- [hypertest] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-07-03T17:04:42.679+05:30  WARN 48537 --- [hypertest] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-07-03T17:04:42.870+05:30  INFO 48537 --- [hypertest] [    Test worker] c.e.hypertest.HypertestApplicationTests  : Started HypertestApplicationTests in 1.815 seconds (process running for 2.466)
+2024-07-04T10:34:44.914+05:30  INFO 52645 --- [hypertest] [    Test worker] c.e.hypertest.HypertestApplicationTests  : Starting HypertestApplicationTests using Java 17.0.10 with PID 52645 (started by meghaagarwal in /Users/meghaagarwal/Desktop/Desktop - Megha’s New Air/Codes/hypertest)
+2024-07-04T10:34:44.914+05:30  INFO 52645 --- [hypertest] [    Test worker] c.e.hypertest.HypertestApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2024-07-04T10:34:45.240+05:30  INFO 52645 --- [hypertest] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-04T10:34:45.268+05:30  INFO 52645 --- [hypertest] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 1 JPA repository interface.
+2024-07-04T10:34:45.453+05:30  INFO 52645 --- [hypertest] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-04T10:34:45.483+05:30  INFO 52645 --- [hypertest] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-04T10:34:45.502+05:30  INFO 52645 --- [hypertest] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-04T10:34:45.681+05:30  INFO 52645 --- [hypertest] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-04T10:34:45.698+05:30  INFO 52645 --- [hypertest] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-04T10:34:45.801+05:30  INFO 52645 --- [hypertest] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2c678c7b
+2024-07-04T10:34:45.802+05:30  INFO 52645 --- [hypertest] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-04T10:34:45.819+05:30  WARN 52645 --- [hypertest] [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-04T10:34:46.235+05:30  INFO 52645 --- [hypertest] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-04T10:34:46.268+05:30  INFO 52645 --- [hypertest] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-04T10:34:46.480+05:30  WARN 52645 --- [hypertest] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-04T10:34:46.677+05:30  INFO 52645 --- [hypertest] [    Test worker] c.e.hypertest.HypertestApplicationTests  : Started HypertestApplicationTests in 1.894 seconds (process running for 2.514)
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

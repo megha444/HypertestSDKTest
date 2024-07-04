@@ -13,6 +13,42 @@ import org.springframework.web.client.RestTemplate;
 import com.example.hypertest.model.Post;
 import com.example.hypertest.repository.PostRepository;
 
+/* 
+@RestController
+public class PostController {
+
+    @Autowired
+    private JdbcTemplate jdbcTemplate;
+
+    @Autowired
+    private RestTemplate restTemplate;
+
+    @PostMapping("/api/createNewPost")
+    public ResponseEntity<Map<String, Object>> createNewPost(@RequestBody Map<String, String> request) {
+        String postName = request.get("post_name");
+        String postContents = request.get("post_contents");
+
+        String insertQuery = "INSERT INTO posts (name, contents) VALUES (?, ?)";
+        KeyHolder keyHolder = new GeneratedKeyHolder();
+        
+        jdbcTemplate.update(connection -> {
+            PreparedStatement ps = connection.prepareStatement(insertQuery, new String[]{"id"});
+            ps.setString(1, postName);
+            ps.setString(2, postContents);
+            return ps;
+        }, keyHolder);
+
+        int postId = keyHolder.getKey().intValue();
+
+        String responseFromApi = restTemplate.getForObject("http://worldtimeapi.org/api/timezone/Asia/Kolkata", String.class);
+
+        Map<String, Object> response = new HashMap<>();
+        response.put("db_post", postId);
+        response.put("http_outbound", responseFromApi);
+
+        return ResponseEntity.ok(response);
+    }
+}*/
 
 @RestController
 @RequestMapping("/api")
@@ -73,3 +109,4 @@ public class PostController {
         }
     }
 }
+ 

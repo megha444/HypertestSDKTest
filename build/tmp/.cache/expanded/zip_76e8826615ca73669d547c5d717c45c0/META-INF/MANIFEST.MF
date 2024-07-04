@@ -1,8 +1,0 @@
-Manifest-Version: 1.0
-Implementation-Title: spring-core
-Implementation-Version: 6.1.10
-Automatic-Module-Name: spring.core
-Created-By: 17.0.10 (Oracle Corporation)
-Multi-Release: true
-Dependencies: jdk.unsupported,org.jboss.vfs
-
