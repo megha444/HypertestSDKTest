@@ -80,19 +80,22 @@ public class RecordingAgent {
     }
 
     public static class ReplayInterceptor {
+        
+        
         public static void intercept(@Origin Method m, Object returnValue) {
             if (m.getName().contains("execute")) {
-                returnValue = "Hardcoded HTTP Response"; // This should be the expected return type, e.g., ResponseEntity<String>
+                returnValue = "Hardcoded HTTP Response";
             } else if (m.getName().contains("update")) {
-                returnValue = 1; // Assume successful DB update
+                returnValue = 1;
             }
             System.out.println("Method exit: " + m.getName() + ", returning hardcoded value: " + returnValue);
         }
     }
 
     public static class RecordInterceptor {
+        
         public static void intercept(@Origin Method m, Object returnValue) {
             System.out.println("Method exit: " + m.getName() + ", return value: " + returnValue);
-        }
+        } 
     }
 }

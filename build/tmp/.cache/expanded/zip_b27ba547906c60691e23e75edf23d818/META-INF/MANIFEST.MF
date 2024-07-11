@@ -1,0 +1,30 @@
+Manifest-Version: 1.0
+Bundle-Description: Angus Activation Registries Implementation
+Bundle-DocURL: https://www.eclipse.org
+Bundle-License: http://www.eclipse.org/org/documents/edl-v10.php
+Bundle-ManifestVersion: 2
+Bundle-Name: Angus Activation Registries
+Bundle-SymbolicName: angus-activation
+Bundle-Vendor: Eclipse Foundation
+Bundle-Version: 2.0.2
+Created-By: Apache Maven Bundle Plugin 5.1.9
+Export-Package: org.eclipse.angus.activation;uses:="jakarta.activation,j
+ akarta.activation.spi";version="2.0.2",org.eclipse.angus.activation.nat
+ iveimage;uses:="org.graalvm.nativeimage.hosted";version="2.0.2"
+Extension-Name: org.eclipse.angus
+Implementation-Build-Id: 2.0.2-RELEASE-c08e320
+Implementation-Title: Angus Activation Registries
+Implementation-Vendor: Eclipse Foundation
+Import-Package: jakarta.activation;version="[2.1,3)",jakarta.activation.
+ spi;version="[2.1,3)",org.eclipse.angus.activation,org.graalvm.nativeim
+ age.hosted;resolution:=optional
+Provide-Capability: osgi.serviceloader;osgi.serviceloader="jakarta.activ
+ ation.spi.MailcapRegistryProvider",osgi.serviceloader;osgi.serviceloade
+ r="jakarta.activation.spi.MimeTypeRegistryProvider"
+Require-Capability: osgi.extender;filter:="(&(osgi.extender=osgi.service
+ loader.registrar)(version>=1.0.0)(!(version>=2.0.0)))";resolution:=opti
+ onal,osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: Jakarta Activation Specification
+Specification-Vendor: Eclipse Foundation
+Specification-Version: 2.1
+

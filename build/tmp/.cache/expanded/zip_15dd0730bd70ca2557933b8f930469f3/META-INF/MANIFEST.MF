@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.jboss.jandex
+Build-Jdk-Spec: 17
+Bundle-Description: SmallRye Build Parent POM
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Jandex: Core
+Bundle-SymbolicName: io.smallrye.jandex
+Bundle-Version: 3.1.2
+Created-By: Apache Maven Bundle Plugin 5.1.8
+Export-Package: org.jboss.jandex;version="3.1.2"
+Import-Package: org.apache.tools.ant;resolution:=optional,org.apache.t
+ ools.ant.types;resolution:=optional
+Main-Class: org.jboss.jandex.Main
+Multi-Release: true
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Tool: Bnd-6.3.1.202206071316
+

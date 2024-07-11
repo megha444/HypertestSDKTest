@@ -18,7 +18,6 @@ public class Post {
 
     private String contents;
 
-    // getters and setters
     public Long getId() {
         return id;
     }
